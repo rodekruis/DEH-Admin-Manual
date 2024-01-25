@@ -28,3 +28,5 @@ Contents
    - Steps to get to technical error screenshot
    - Known issues
    - Monitoring logs, insights and costs 
+8. Other important aspects
+   - DPIA
