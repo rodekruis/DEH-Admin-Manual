@@ -19,10 +19,10 @@ Contents
    - Install notifications
    - Changing WhatsApp profile information
 3. Operational admin jobs
-  - Add/configure/remove users in Flex
-  - Add/configure/remove users in EspoCRM
-  - Add/remove WhatsApp templates
-  - 
+   - Add/configure/remove users in Flex
+   - Add/configure/remove users in EspoCRM
+   - Add/remove WhatsApp templates
+   - 
 7. Troubleshooting guidelines
    - Steps to save browser logs
    - Steps to get to technical error screenshot
