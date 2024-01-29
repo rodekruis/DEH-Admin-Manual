@@ -78,3 +78,12 @@ The default entity structure has been modified to suit the Product X use case. I
 ![EspoCRm data model](https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/0daf4b95-642a-49c9-895e-5d3a43a55e29)
 
 #### Lifecycle Diagrams
+
+##### Conversation Lifecycle
+![image](https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/b0937075-20b4-4b02-8d85-61f06e3fd8d8)
+
+##### Call lifecycle
+![image](https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/9e4e661e-a936-4975-b01e-79b3385dda37)
+
+##### Outbound Conversation Lifecycle
+![image](https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/1ffd209c-1434-4033-a264-a05fa66f93af)
