@@ -7,6 +7,7 @@ Contents
    - DEH in detail
    - EspoCRM DEH Data model
    - Lifecycle Diagrams
+   - Work environments
 3. DEH Configuration by admin
    - [Best practises](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Best-practices)
    - Add/edit/remove fields
