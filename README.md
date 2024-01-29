@@ -35,6 +35,12 @@ Contents
 8. Other important aspects
    - DPIA
 
+## Introduction
+
+As an admin you possess the highest level of access rights in DEH. Deviation from the instructions outlined in this manual may result in unintended system disruptions. Depending on the extent of the changes made and the modified settings, recovery could require significant effort from a team of developers, potentially taking several days. Therefore, we urge you to exercise caution and carefully follow this manual. For every production environment, there is also a staging environment to test things on. If you are unsure about changing certain things, you could oftentimes first try this in the staging environment.  
+
+This manual is only useful for already configured instances of DEH and it assumes that the reader has already read the [agent/supervisor manual](futurelinkhere) of DEH. This manual is not meant for setting up DEH from scratch since the GitHub documentation provides this already. 
+
 
 ## Base Knowledge
 Why this section? The following gives the necessary background information on DEH. This could be beneficial when encountering an issue or when you want to get an overview of all the product components.
@@ -87,3 +93,24 @@ The default entity structure has been modified to suit the Product X use case. I
 
 ##### Outbound Conversation Lifecycle
 ![image](https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/1ffd209c-1434-4033-a264-a05fa66f93af)
+
+### Work environments
+To effectively work with RedLine as an admin, various environments are essential: 
+
+1. Twilio Flex
+2. Twilio Console
+3. Azure tenant for SSO
+4. EspoCRM
+5. Virtual Machine
+
+**Twilio Flex** is the contact center product from Twilio where RedLine is built on top of. See it as the engine of RedLine, where RedLine is the custom car built around this engine.. Each RedLine user should be assigned to one of the three default Twilio Flex roles: agents, supervisors, and admins.  
+
+The **Twilio Console** is the cockpit of all things related to Twilio. From the Console you can access RedLine as an admin by opening Twilio Flex via the Console. In the Console you will also find products related to RedLine which are not Flex, for example: Twilio Studio for chatbots and IVR flows, WhatsApp templates, Twilio TaskRouter for configuring the way tasks (conversation or calls) are presented to users and there is the possibility to see logs and monitor errors via the Console. 
+
+**Azure tenant for SSO** is currently a separate Azure tenant (next to the existing NLRC Azure environment) where users can be added, configured, and removed from RedLine.  
+
+**EspoCRM** 
+
+**Virtual Machine** 
+
+### 
