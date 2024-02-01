@@ -2,7 +2,7 @@
 DEH Admin Manual (temporary docs)
 
 Contents
-1. Base knowledge
+1. [Base knowledge](https://github.com/rodekruis/DEH-Admin-Manual/blob/main/README.md#base-knowledge)
    - Terminology
    - DEH in detail
    - EspoCRM DEH Data model
@@ -36,6 +36,7 @@ Contents
    - Monitoring logs, insights and costs 
 8. Other important aspects
    - [DPIA](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Best-practices#data-responsibility) (Emie)
+   - Forbidden areas
 
 ## Introduction
 
@@ -115,4 +116,72 @@ The **Twilio Console** is the cockpit of all things related to Twilio. From the 
 
 **Virtual Machine** 
 
-### 
+### DEH Configuration by Admin
+
+> [!NOTE]
+> This manual tries to refer as much to other documentation. This is because EspoCRM has good [general documentation](https://docs.espocrm.com/) which is updated regularly and should be the one source of truth. If there is generic EspoCRM knowledge missing in the EspoCRM docs, there is another place to capture relevant knowledge for the humanitarian sector specifically: [EspoCRM Knowledge Base by 510](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki). If something is not mentioned in the General EspoCRM docs AND not generic enough to place in the Knowledge Base, it will be described on this page.
+
+#### Best practises
+When changing EspoCRM, there are certain best practises to follow. It is highly recommended to read these at least once. These can be found in the [EspoCRM Knowledge Base Best Practises Page](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Best-practices)
+
+#### Add/Edit/Remove fields
+To add, edit or remove a field, please refer to the [field section in the EspoCRM General Docs](https://docs.espocrm.com/administration/fields/), the [best practises around fields in the EspoCRM Knowledge Base](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Best-practices#fields) and the [DPIA page](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Best-practices#data-responsibility)
+
+Note: there are certain fields which are impossible to remove. These are part of the DEH extension and DEH will not work properly without those fields. There is always the possibility to not use those fields in the layout.
+
+#### Add/Edit/Remove layouts
+To add, edit or remove layouts, please refer to the [EspoCRM docs](https://docs.espocrm.com/administration/layout-manager/) or the [best practises around layouts in the EspoCRM Knowledge Base](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Best-practices#layout)
+
+#### Translations in Twilio Flex
+Translations of everything in Twilio Flex (so not the EspoCRM part) can currently only be [configured](https://github.com/rodekruis/RED-X-DEH/blob/main/docs/deployment/translation-twilio-flex.md) by 510. The text of the translations can be of Twilio Flex can be found in the following [JSON](https://github.com/rodekruis/RED-X-DEH/tree/main/terraform/twilio/language-files). 
+
+The current process to change translations text in Twilio Flex would be the following: 
+1. Get the JSON for the language and translations you want changed. 510 can assist here.
+2. Change the words/sentences that you want to change.
+3. 510 will upload the edited version of the JSON. Please note: this will affect the translation of the changed language globally for every instance.
+
+Future process: there will probably be a translation JSON per langauge hosted in a blob storage. Admins have access to edit this JSON online which means changes are immediately deployed. 
+
+#### Translations in EspoCRM
+The [EspoCRM Knowledge base translations section](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Customization#translations) describes how to change labels in different languages, both manually and automatic.
+
+#### User management 
+
+#### Roles
+Everything about generic roles is described in the [EspoCRM Docs](https://docs.espocrm.com/administration/roles-management/). DEH specific roles can be found [here](https://github.com/rodekruis/RED-X-DEH/blob/main/docs/deployment/default-espocrm-roles-teams.md) 
+
+#### Teams
+Teams are a way to group users together. Everything generic about teams in EspoCRM is described in the [EspoCRM Docs](https://www.espocrm.com/features/teams/). 
+
+Teams in Twilio Flex are grouped using Skills and these are used for routing certain messages/calls to a certain team first before routing to everyone (for example). To add team in Twilio Flex, ask 510 to assist since this requires some [configuration steps](https://github.com/rodekruis/RED-X-DEH/blob/main/docs/operation/worker-skills-structure.md#project). To add a user to a team in Twilio Flex, you need the admin or supervisor role in Twilio Flex and then you can add/remove a skill for a user in Flex.
+
+#### Edit opening/closing times in chatbot
+
+#### Edit introduction message in chatbot
+
+#### Adding/removing geographic permissions for messages/calls from foreign phone numbers
+
+
+- TaskRouter (for future)
+- [Kobo to EspoCRM connection](https://kobo-connect.azurewebsites.net/docs#/default/kobo_to_espocrm_kobo_to_espocrm_post) 
+- Reports (1.[ general explanation](https://docs.espocrm.com/user-guide/reports/) 2. [DEH specific reports](https://github.com/rodekruis/RED-X-DEH/blob/main/docs/deployment/deh-and-advanced-package.md) (Emie)
+- Install notifications and [stream](https://docs.espocrm.com/user-guide/stream/#notifications)
+- Changing WhatsApp profile information in Console
+
+### Other important aspects
+
+#### DPIA
+   - [DPIA](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Best-practices#data-responsibility) (Emie)
+
+
+#### Forbidden areas
+There are certain areas which can have devastating consequences when changed. Only an admin has access to these areas, but should not touch this. This is a list of potential destructive actions to be aware of:
+1. Changing the global UI (Administration>User Interface). This affects UI for all users of EspoCRM.
+2. Uninstall the EspoCRM Flex DEH Extension (Adminstration>Extensions). This will remove all DEH relevant extensions and DEH related data will not be visible anymore in EspoCRM.
+3. Uninstall the Advanced Pack Extension (Administration>Extensions). Only relevant if this Advanced Package is installed. Uninstalling it will remove all the reports (dashboards) and flowcharts/workflows.
+4. Upgrade EspoCRM (Administration>Upgrade). DEH is currently made for EspoCRM version 8.1.0. A newer version will not ensure compatibility with DEH.
+5. Remove the API role or API user called automatic-system-deh (Administration>Roles and Administration>API Users). This will break the connection between Twilio Flex and EspoCRM and no data will be transferred anymore.
+6. Certain role settings for users (Administration>Roles). The role permissions 'Export Permission' and 'Mass Update Permission' are very powerfull permissions which should be considered carefully before assigning to a role. This would allow a user to quickly export large volumes of personal data or change large volumes of records in EspoCRM.
+7. Disabling or removing an entity (Administration>Entity Manager>[Entity]>Edit).
+8. Removing relationships between entities (Administration>Entity Manager>[Entity]>Relationships).
+9. Removing Email configuration settings (Administration>Outbound Emails). Removing this will stop the email notifications to users and password reset emails.
