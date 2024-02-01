@@ -22,7 +22,7 @@ Contents
    - Adding/removing geographic permissions for messages/calls from foreign phone numbers
    - TaskRouter (for future)
    - [Kobo to EspoCRM connection](https://kobo-connect.azurewebsites.net/docs#/default/kobo_to_espocrm_kobo_to_espocrm_post) 
-   - Reports (1.[ general explanation](https://docs.espocrm.com/user-guide/reports/) 2. [DEH specific reports](https://github.com/rodekruis/RED-X-DEH/blob/main/docs/deployment/deh-and-advanced-package.md)
+   - Reports (1.[ general explanation](https://docs.espocrm.com/user-guide/reports/) 2. [DEH specific reports](https://github.com/rodekruis/RED-X-DEH/blob/main/docs/deployment/deh-and-advanced-package.md) (Emie)
    - Install notifications and [stream](https://docs.espocrm.com/user-guide/stream/#notifications)
    - Changing WhatsApp profile information in Console
 4. Operational admin jobs
@@ -35,7 +35,7 @@ Contents
    - Known issues
    - Monitoring logs, insights and costs 
 8. Other important aspects
-   - DPIA
+   - [DPIA](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Best-practices#data-responsibility) (Emie)
 
 ## Introduction
 
