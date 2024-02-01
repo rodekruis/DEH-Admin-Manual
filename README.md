@@ -10,24 +10,25 @@ Contents
    - Work environments
 3. DEH Configuration by admin
    - [Best practises](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Best-practices)
-   - Add/edit/remove fields
-   - Add/edit/remove layouts
-   - Translations in Flex (ask 510)
-   - Translations in Espo
-   - Roles
+   - [Add/edit/remove fields](https://docs.espocrm.com/administration/fields/) 
+   - [Add/edit/remove layouts](https://docs.espocrm.com/administration/layout-manager/)
+   - Translations in Flex (ask 510) (1. current implementation, 2. future situation which jsons in Azure blob which can be edited by NS)
+   - Translations in Espo (two step approach: 1. [automatically translate ](https://espo-translate.azurewebsites.net/docs#/default/translate_translate_post) 2. edit translations in label manager)
+   - User management 
+   - Roles (1. [explain how roles work](https://docs.espocrm.com/administration/roles-management/) 2. explain DEH specific roles)
+   - Teams (1. explain how [teams](https://www.espocrm.com/features/teams/) work [knowledge base])
    - Edit opening/closing times in chatbot
    - Edit introduction message in chatbot
    - Adding/removing geographic permissions for messages/calls from foreign phone numbers
    - TaskRouter (for future)
-   - Kobo to EspoCRM connection
-   - Reports
-   - Install notifications
-   - Changing WhatsApp profile information
+   - [Kobo to EspoCRM connection](https://kobo-connect.azurewebsites.net/docs#/default/kobo_to_espocrm_kobo_to_espocrm_post) 
+   - Reports (1.[ general explanation](https://docs.espocrm.com/user-guide/reports/) 2. [DEH specific reports](https://github.com/rodekruis/RED-X-DEH/blob/main/docs/deployment/deh-and-advanced-package.md)
+   - Install notifications and [stream](https://docs.espocrm.com/user-guide/stream/#notifications)
+   - Changing WhatsApp profile information in Console
 4. Operational admin jobs
-   - Add/configure/remove users in Flex
-   - Add/configure/remove users in EspoCRM
-   - Add/remove WhatsApp templates
-   - 
+   - Add/configure/remove users in Flex (1. current situation 2. future situation when unified user management is ready)
+   - Add/configure/remove users in EspoCRM (1. current situation)
+   - Add/remove WhatsApp templates (add in console, add in Espo as canned response)
 7. Troubleshooting guidelines
    - Steps to save browser logs
    - Steps to get to technical error screenshot
