@@ -119,7 +119,7 @@ The **Twilio Console** is the cockpit of all things related to Twilio. From the 
 ## DEH Configuration by Admin
 
 > [!NOTE]
-> This manual tries to refer as much to other documentation. This is because EspoCRM has good [general documentation](https://docs.espocrm.com/) which is updated regularly and should be the one source of truth. If there is generic EspoCRM knowledge missing in the EspoCRM docs, there is another place to capture relevant knowledge for the humanitarian sector specifically: [EspoCRM Knowledge Base by 510](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki). If something is not mentioned in the General EspoCRM docs AND not generic enough to place in the Knowledge Base, it will be described on this page.
+> This manual tries to refer as much as possible to other documentation. This is because EspoCRM has good [general documentation](https://docs.espocrm.com/) which is updated regularly and should be the one source of truth. If there is generic EspoCRM knowledge missing in the EspoCRM docs, there is another place to capture relevant knowledge for the humanitarian sector specifically: [EspoCRM Knowledge Base by 510](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki). If something is not mentioned in the General EspoCRM docs AND not generic enough to place in the Knowledge Base, it will be described on this page.
 
 ### Best practises
 When changing EspoCRM, there are certain best practises to follow. It is highly recommended to read these at least once. These can be found in the [EspoCRM Knowledge Base Best Practises Page](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Best-practices)
