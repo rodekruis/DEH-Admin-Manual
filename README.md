@@ -9,26 +9,26 @@ Contents
    - Lifecycle Diagrams
    - Work environments
 3. DEH Configuration by admin
-   - [Best practises](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Best-practices)
-   - [Add/edit/remove fields](https://docs.espocrm.com/administration/fields/) 
-   - [Add/edit/remove layouts](https://docs.espocrm.com/administration/layout-manager/)
-   - Translations in Flex (ask 510) (1. current implementation, 2. future situation which jsons in Azure blob which can be edited by NS)
-   - Translations in Espo (two step approach: 1. [automatically translate ](https://espo-translate.azurewebsites.net/docs#/default/translate_translate_post) 2. edit translations in label manager)
-   - User management 
-   - Roles (1. [explain how roles work](https://docs.espocrm.com/administration/roles-management/) 2. explain DEH specific roles)
-   - Teams (1. explain how [teams](https://www.espocrm.com/features/teams/) work [knowledge base])
+   - Best practises
+   - Add/edit/remove fields 
+   - Add/edit/remove layouts
+   - Translations in Flex (ask 510)
+   - Translations in Espo 
+   - User management (draft)
+   - Roles 
+   - Teams 
    - Edit opening/closing times in chatbot
    - Edit introduction message in chatbot
    - Adding/removing geographic permissions for messages/calls from foreign phone numbers
    - TaskRouter (for future)
-   - [Kobo to EspoCRM connection](https://kobo-connect.azurewebsites.net/docs#/default/kobo_to_espocrm_kobo_to_espocrm_post) 
-   - Reports (1.[ general explanation](https://docs.espocrm.com/user-guide/reports/) 2. [DEH specific reports](https://github.com/rodekruis/RED-X-DEH/blob/main/docs/deployment/deh-and-advanced-package.md) (Emie)
-   - Install notifications and [stream](https://docs.espocrm.com/user-guide/stream/#notifications)
+   - Kobo form submissions to EspoCRM connection
+   - Reports/dashboards
+   - Configure notifications and stream
    - Changing WhatsApp profile information in Console
 4. Operational admin jobs
-   - Add/configure/remove users in Flex (1. current situation 2. future situation when unified user management is ready)
-   - Add/configure/remove users in EspoCRM (1. current situation)
-   - Add/remove WhatsApp templates (add in console, add in Espo as canned response)
+   - Add/configure/remove users in Flex 
+   - Add/configure/remove users in EspoCRM 
+   - Add/remove WhatsApp templates
 7. Troubleshooting guidelines
    - Steps to save browser logs
    - Steps to get to technical error screenshot
@@ -351,13 +351,27 @@ Steps to find overview of **costs**:
 
 
 ### Forbidden areas
-There are certain areas which can have devastating consequences when changed. Only an admin has access to these areas, but should not touch this. This is a list of potential destructive actions to be aware of:
+There are certain areas which can have devastating consequences when changed. Only an admin has access to these areas, but should not touch this. 
+
+This is a list of potential destructive actions in EspoCRM to be aware of:
 1. Changing the global UI (Administration>User Interface). This affects UI for all users of EspoCRM.
-2. Uninstall the EspoCRM Flex DEH Extension (Adminstration>Extensions). This will remove all DEH relevant extensions and DEH related data will not be visible anymore in EspoCRM.
-3. Uninstall the Advanced Pack Extension (Administration>Extensions). Only relevant if this Advanced Package is installed. Uninstalling it will remove all the reports (dashboards) and flowcharts/workflows.
-4. Upgrade EspoCRM (Administration>Upgrade). DEH is currently made for EspoCRM version 8.1.0. A newer version will not ensure compatibility with DEH.
-5. Remove the API role or API user called automatic-system-deh (Administration>Roles and Administration>API Users). This will break the connection between Twilio Flex and EspoCRM and no data will be transferred anymore.
-6. Certain role settings for users (Administration>Roles). The role permissions 'Export Permission' and 'Mass Update Permission' are very powerfull permissions which should be considered carefully before assigning to a role. This would allow a user to quickly export large volumes of personal data or change large volumes of records in EspoCRM.
-7. Disabling or removing an entity (Administration>Entity Manager>[Entity]>Edit).
-8. Removing relationships between entities (Administration>Entity Manager>[Entity]>Relationships).
-9. Removing Email configuration settings (Administration>Outbound Emails). Removing this will stop the email notifications to users and password reset emails.
+2. Remove EspoCRM Single Sign On (SSO) settings (Administration>Authentication). This will disable every user from using SSO to login in EspoCRM.
+3. Uninstall the EspoCRM Flex DEH Extension (Adminstration>Extensions). This will remove all DEH relevant extensions and DEH related data will not be visible anymore in EspoCRM.
+4. Uninstall the Advanced Pack Extension (Administration>Extensions). Only relevant if this Advanced Package is installed. Uninstalling it will remove all the reports (dashboards) and flowcharts/workflows.
+5. Upgrade EspoCRM (Administration>Upgrade). DEH is currently made for EspoCRM version 8.1.0. A newer version will not ensure compatibility with DEH.
+6. Remove the API role or API user called automatic-system-deh (Administration>Roles and Administration>API Users). This will break the connection between Twilio Flex and EspoCRM and no data will be transferred anymore.
+7. Certain role settings for users (Administration>Roles). The role permissions 'Export Permission' and 'Mass Update Permission' are very powerfull permissions which should be considered carefully before assigning to a role. This would allow a user to quickly export large volumes of personal data or change large volumes of records in EspoCRM.
+8. Disabling or removing an entity (Administration>Entity Manager>[Entity]>Edit).
+9. Removing relationships between entities (Administration>Entity Manager>[Entity]>Relationships).
+10. Removing Email configuration settings (Administration>Outbound Emails). Removing this will stop the email notifications to users and password reset emails.
+
+This is a list of potential destructive actions in Twilio to be aware of:
+1. Remove Active Phone Numbers
+2. Remove SSO setting for Twilio Flex (Flex>Manage>Single sign-on). This will disable every user from logging in to Twilio Flex.
+3. Disconnect Studio Flows (chatbot/IVR) with Twilio Flex (Flex>Manage>Messaging>Filter by Address type)
+4. Removing TaskRouter settings
+5. Removing Studio flows
+6. Removing WhatsApp sender (Messaging>Senders>WhatsApp senders)
+7. Removing Facebook Messenger (Channels>Facebook Messenger)
+8. Removing Event Streams
+9. Removing API keys & tokens
