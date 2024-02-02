@@ -59,7 +59,7 @@ The product comprises two main tangible components:
 ### Often used Terminology
 | Terminology          | Definition                                                                                                                     |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| EspoCRM              | An open source CRM solution                                                                                                    |
+| EspoCRM              | An open source Customer Relationship Management (CRM) solution                                                                 |
 | Azure                | Microsoft's cloud computing platform serving as backend                                                                        |
 | Twilio Flex          | Cloud-based contact center solution provided by Twilio                                                                         |
 | Twilio Console       | UI of Twilio to manage accounts, buy and configure Twilio products such as Flex                                                |
