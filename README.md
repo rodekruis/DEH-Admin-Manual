@@ -89,14 +89,13 @@ The default entity structure has been modified to suit the Product X use case. I
 ### Lifecycle Diagrams
 
 #### Conversation Lifecycle
-![image](https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/b0937075-20b4-4b02-8d85-61f06e3fd8d8)
-<img1 src="https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/b0937075-20b4-4b02-8d85-61f06e3fd8d8" width="600">
-<img2 src="https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/9e4e661e-a936-4975-b01e-79b3385dda37" width="600">
+<img src="https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/b0937075-20b4-4b02-8d85-61f06e3fd8d8" width="600">
+
 #### Call lifecycle
-![image](https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/9e4e661e-a936-4975-b01e-79b3385dda37)
+<img src="https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/9e4e661e-a936-4975-b01e-79b3385dda37" width="600">
 
 #### Outbound Conversation Lifecycle
-![image](https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/1ffd209c-1434-4033-a264-a05fa66f93af)
+<img src="https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/1ffd209c-1434-4033-a264-a05fa66f93af" width="600">
 
 ### Work environments
 To effectively work with DEH as an admin, various environments are essential: 
