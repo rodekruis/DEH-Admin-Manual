@@ -48,7 +48,7 @@ This manual is only useful for already configured instances of DEH and it assume
 ## Base Knowledge
 Why this section? The following gives the necessary background information on DEH. This could be beneficial when encountering an issue or when you want to get an overview of all the product components.
 
-DEH is an omni-channel contact center with CRM integration for use across all Red Cross National Societies. This is a product for deploying digital services worldwide and leverages Twilio's communication capabilities mainly via [Twilio Flex](https://www.twilio.com/docs/flex) with [EspoCRM](https://www.espocrm.com/) as an underlying agent interface and data storage. The backend of this product is partly made possible via shared resources in [Azure](https://azure.microsoft.com/en-gb/). 
+DEH is an omni-channel contact center with CRM integration for use across all Red Cross National Societies. This is a product for deploying digital services worldwide and leverages Twilio's communication capabilities mainly via [Twilio Flex](https://www.twilio.com/docs/flex) with [EspoCRM](https://www.espocrm.com/) as an underlying agent interface and CRM. The backend of this product is partly made possible via shared resources (a.o. data storage) in [Azure](https://azure.microsoft.com/en-gb/). 
 
 The product comprises two main tangible components:
 
