@@ -154,7 +154,7 @@ Steps:
 1. Go to Twilio Console
 2. Studio
 3. Flow
-4. Select flow named 'Default) Opening Hours Subflow'
+4. Select flow named '(Default) Opening Hours Subflow'
 5. Click widget named ‘set_top_variables’
 6. Edit ‘openTime’ or 'closeTime' in hh:mm format
 7. Edit 'openDay' or 'closeDay'. 1 means Monday, 2 Tuesday, etc..
