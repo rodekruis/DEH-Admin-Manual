@@ -90,6 +90,7 @@ The default entity structure has been modified to suit the Product X use case. I
 
 #### Conversation Lifecycle
 ![image](https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/b0937075-20b4-4b02-8d85-61f06e3fd8d8)
+<img src="[https://your-image-url.type](https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/b0937075-20b4-4b02-8d85-61f06e3fd8d8)" width="100" height="100">
 
 #### Call lifecycle
 ![image](https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/9e4e661e-a936-4975-b01e-79b3385dda37)
@@ -134,7 +135,7 @@ Note: there are certain fields which are impossible to remove. These are part of
 To add, edit or remove layouts, please refer to the [EspoCRM docs](https://docs.espocrm.com/administration/layout-manager/) or the [best practises around layouts in the EspoCRM Knowledge Base](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Best-practices#layout)
 
 ### Translations in Twilio Flex
-Translations of everything in Twilio Flex (so not the EspoCRM part) can currently only be [configured](https://github.com/rodekruis/RED-X-DEH/blob/main/docs/deployment/translation-twilio-flex.md) by 510. The text of the translations can be of Twilio Flex can be found in the following [JSON](https://github.com/rodekruis/RED-X-DEH/tree/main/terraform/twilio/language-files). 
+Translations of everything in Twilio Flex (so not the EspoCRM frame) can currently only be [configured](https://github.com/rodekruis/RED-X-DEH/blob/main/docs/deployment/translation-twilio-flex.md) by 510. The text of the translations can be of Twilio Flex can be found in the following [JSON](https://github.com/rodekruis/RED-X-DEH/tree/main/terraform/twilio/language-files). 
 
 The current process to change translations text in Twilio Flex would be the following: 
 1. Get the JSON for the language and translations you want changed. 510 can assist here.
@@ -147,6 +148,7 @@ Future process: there will probably be a translation JSON per langauge hosted in
 The [EspoCRM Knowledge base translations section](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Customization#translations) describes how to change labels in different languages, both manually and automatic.
 
 ### User management 
+The generic information on user management is very well described in the [EspoCRM Docs](https://docs.espocrm.com/administration/users-management/). DEH specific users are 'admin' and 'regular' (for supervisors and agents). DEH specific API users are 'automatic-system-deh' (Twilio API integration) and can be extended with an Kobo API integration.
 
 ### Roles
 Everything about generic roles is described in the [EspoCRM Docs](https://docs.espocrm.com/administration/roles-management/). DEH specific roles can be found [here](https://github.com/rodekruis/RED-X-DEH/blob/main/docs/deployment/default-espocrm-roles-teams.md) 
@@ -155,6 +157,8 @@ Everything about generic roles is described in the [EspoCRM Docs](https://docs.e
 Teams are a way to group users together. Everything generic about teams in EspoCRM is described in the [EspoCRM Docs](https://www.espocrm.com/features/teams/). 
 
 Teams in Twilio Flex are grouped using Skills and these are used for routing certain messages/calls to a certain team first before routing to everyone (for example). To add team in Twilio Flex, ask 510 to assist since this requires some [configuration steps](https://github.com/rodekruis/RED-X-DEH/blob/main/docs/operation/worker-skills-structure.md#project). To add a user to a team in Twilio Flex, you need the admin or supervisor role in Twilio Flex and then you can add/remove a skill for a user in Flex.
+
+Teams are also required if the 'Sensitive case' functionality is added to DEH. Ask 510 to assist since this is an add on to the standard solution.
 
 ### Edit opening/closing times/days in chatbot
 The opening hours/days determine if conversations/calls can end up with agents in Twilio Flex. If a message/call is received outside of opening times, it will not be shown to in Twilio Flex but it will be logged in EspoCRM as new conversation.
