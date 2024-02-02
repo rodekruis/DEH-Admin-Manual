@@ -86,17 +86,6 @@ The default entity structure has been modified to suit the Product X use case. I
 
 ![EspoCRm data model](https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/0daf4b95-642a-49c9-895e-5d3a43a55e29)
 
-### Lifecycle Diagrams
-
-#### Conversation Lifecycle
-<img src="https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/b0937075-20b4-4b02-8d85-61f06e3fd8d8" width="600">
-
-#### Call lifecycle
-<img src="https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/9e4e661e-a936-4975-b01e-79b3385dda37" width="600">
-
-#### Outbound Conversation Lifecycle
-<img src="https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/1ffd209c-1434-4033-a264-a05fa66f93af" width="600">
-
 ### Work environments
 To effectively work with DEH as an admin, various environments are essential: 
 
@@ -116,7 +105,6 @@ The **Twilio Console** is the cockpit of all things related to Twilio, and chang
 
 The **Virtual Machine** (VM) is a computer resource that uses software instead of a physical computer to run programs and deploy apps. EspoCRM is hosted on a VM that was specifically set-up for DEH. The VM is one of the resources on Azure. 
 
--
 ## DEH Configuration by Admin
 
 > [!NOTE]
@@ -353,6 +341,17 @@ Steps to find overview of **costs**:
 ### DPIA
    - [DPIA](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Best-practices#data-responsibility) (Emie)
 
+### Lifecycle Diagrams: DEH explained in a flowchart
+These flowcharts represent all the tiny steps of DEH that take place from start: the moment a call or message was send in, to end. An admin can use the flowcharts to further understand DEH. The steps are different for incoming messasges (conversation), calls and outbound messages (outbound conversation). We refer to the images below.
+
+#### Conversation Lifecycle
+<img src="https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/b0937075-20b4-4b02-8d85-61f06e3fd8d8" width="600">
+
+#### Call lifecycle
+<img src="https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/9e4e661e-a936-4975-b01e-79b3385dda37" width="600">
+
+#### Outbound Conversation Lifecycle
+<img src="https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/1ffd209c-1434-4033-a264-a05fa66f93af" width="600">
 
 ### Forbidden areas
 There are certain areas which can have devastating consequences when changed. Only an admin has access to these areas, but should not touch this. 
