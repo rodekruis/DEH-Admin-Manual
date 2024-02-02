@@ -52,7 +52,7 @@ DEH is an omni-channel contact center with CRM integration for use across all Re
 
 The product comprises two main tangible components:
 
-- A Twilio Flex instance providing agents with functionality for receiving calls, Facebook Messenger, and WhatsApp via their device.
+- A Twilio Flex instance providing agents with the functionality of receiving calls, Facebook Messenger, and WhatsApp via their device.
 - An EspoCRM instance (embedded in Twilio Flex) allowing agents to retrieve and store relevant information relating to a person affected (PA) such as personal details, case information, interactions, etc.
 
 
