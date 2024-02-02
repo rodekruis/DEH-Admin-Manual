@@ -106,9 +106,9 @@ To effectively work with DEH as an admin, various environments are essential:
 4. EspoCRM
 5. Virtual Machine
 
-**Twilio Flex** is the contact center product from Twilio where DEH is built on top of. See it as the engine of DEH, where DEH is the custom car built around this engine.. Each DEH user should be assigned to one of the three default Twilio Flex roles: agents, supervisors, and admins.  
+**Twilio Flex** is the contact center product from Twilio where DEH is built on top of. See it as the engine of DEH, where DEH is the custom car built around this engine. Each DEH user should be assigned to one of the three default Twilio Flex roles: agents, supervisors, and admins.  
 
-The **Twilio Console** is the cockpit of all things related to Twilio. From the Console you can access DEH as an admin by opening Twilio Flex via the Console. In the Console you will also find products related to DEH which are not Flex, for example: Twilio Studio for chatbots and IVR flows, WhatsApp templates, Twilio TaskRouter for configuring the way tasks (conversation or calls) are presented to users and there is the possibility to see logs and monitor errors via the Console. 
+The **Twilio Console** is the cockpit of all things related to Twilio, and change configurations of Twilio Flex. From the Console you can access DEH as an admin by opening Twilio Flex via the Console. In the Console you will also find products related to DEH which are not Flex, for example: Twilio Studio for chatbots and IVR flows (dialmenu for calls), WhatsApp templates, Twilio TaskRouter for configuring the way tasks (conversation or calls) are presented to users (like routing a specific chat or call to a specific agent) and there is the possibility to see logs and monitor errors via the Console. 
 
 **Azure tenant for SSO** is currently a separate Azure tenant (next to the existing NLRC Azure environment) where users can be added, configured, and removed from DEH.  
 
