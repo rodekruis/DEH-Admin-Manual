@@ -364,6 +364,7 @@ This is a list of potential destructive actions in EspoCRM to be aware of:
 8. Disabling or removing an entity (Administration>Entity Manager>[Entity]>Edit).
 9. Removing relationships between entities (Administration>Entity Manager>[Entity]>Relationships).
 10. Removing Email configuration settings (Administration>Outbound Emails). Removing this will stop the email notifications to users and password reset emails.
+11. Removing all other users (and admins) so that no one has access anymore.
 
 This is a list of potential destructive actions in Twilio to be aware of:
 1. Remove Active Phone Numbers
