@@ -112,10 +112,11 @@ The **Twilio Console** is the cockpit of all things related to Twilio, and chang
 
 **Azure tenant for SSO** is currently a separate Azure tenant (next to the existing NLRC Azure environment) where users can be added, configured, and removed from DEH.  
 
-**EspoCRM** 
+**EspoCRM** is a open source CRM software that allows us to create, store and adjust contacts, cases and other information of the people we are in contact with. 
 
-**Virtual Machine** 
+The **Virtual Machine** (VM) is a computer resource that uses software instead of a physical computer to run programs and deploy apps. EspoCRM is hosted on a VM that was specifically set-up for DEH. The VM is one of the resources on Azure. 
 
+-
 ## DEH Configuration by Admin
 
 > [!NOTE]
