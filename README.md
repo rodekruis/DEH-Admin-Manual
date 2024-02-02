@@ -82,7 +82,7 @@ See the below data model to see how the three relate to each other:
 
 EspoCRM is used as a CRM solution for storing information related to PA's, open cases, and interactions between agents & PA's. In addition to this the underlying database is used for storing extracted Twilio data utilised for additional context and reporting.
 
-The default entity structure has been modified to suit the Product X use case. If starting from a fresh EspoCRM instance some modifications need to applied to match this configuration. The below image details the key entities and their relationships:
+The default entity structure has been modified to suit the Product X use case. If starting from a fresh EspoCRM instance some modifications need to applied to match this configuration. The below image details the key entities and their relationships, where the 1-0 relation represents a one-to-many relationship:
 
 ![EspoCRm data model](https://github.com/rodekruis/DEH-Admin-Manual/assets/110089322/0daf4b95-642a-49c9-895e-5d3a43a55e29)
 
