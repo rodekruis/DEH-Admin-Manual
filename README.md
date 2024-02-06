@@ -141,7 +141,7 @@ The [EspoCRM Knowledge base translations section](https://github.com/rodekruis/E
 The generic information on user management is very well described in the [EspoCRM Docs](https://docs.espocrm.com/administration/users-management/). 
 
 >[!NOTE]
-> The below user management information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant.
+> From this point ontwards the user management information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant.
 
 DEH specific users are 'admin' and 'regular' (for supervisors and agents). DEH specific API users are 'automatic-system-deh' (Twilio API integration) and can be extended with an Kobo API integration.
 
@@ -149,7 +149,7 @@ DEH specific users are 'admin' and 'regular' (for supervisors and agents). DEH s
 Everything about generic roles is described in the [EspoCRM Docs](https://docs.espocrm.com/administration/roles-management/). 
 
 >[!NOTE]
-> The below user management inofrmation is useful for Twilio Flex. If you only use EspoCRM, this is not relevant.
+> From this point onwards the user management inofrmation is useful for Twilio Flex. If you only use EspoCRM, this is not relevant.
 
 DEH specific roles can be found [here](https://github.com/rodekruis/RED-X-DEH/blob/main/docs/deployment/default-espocrm-roles-teams.md) 
 
@@ -159,7 +159,7 @@ Teams are a way to group users together. Everything generic about teams in EspoC
 Teams are also required if the 'Sensitive case' functionality is added to DEH. Ask 510 to assist since this is an add on to the standard solution.
 
 >[!NOTE]
-> The below teams information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant.
+> From this point onwards, the below teams information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant.
  
 Teams in Twilio Flex are grouped using Skills and these are used for routing certain messages/calls to a certain team first before routing to everyone (for example). To add team in Twilio Flex, ask 510 to assist since this requires some [configuration steps](https://github.com/rodekruis/RED-X-DEH/blob/main/docs/operation/worker-skills-structure.md#project). To add a user to a team in Twilio Flex, you need the admin or supervisor role in Twilio Flex and then you can add/remove a skill for a user in Flex.
 
