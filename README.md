@@ -369,8 +369,8 @@ These flowcharts represent all the tiny steps of DEH that take place from start:
 >9. Removing relationships between entities (Administration>Entity Manager>[Entity]>Relationships).
 >10. Removing Email configuration settings (Administration>Outbound Emails). Removing this will stop the email notifications to users and password reset emails.
 >11. Removing all other users (and admins) so that no one has access anymore.
-
-> _The below is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
+>
+>> _The below is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
 >
 >This is a list of potential destructive actions in Twilio to be aware of:
 >1. Remove Active Phone Numbers
