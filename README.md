@@ -122,7 +122,7 @@ Note: there are certain fields which are impossible to remove. These are part of
 To add, edit or remove layouts, please refer to the [EspoCRM docs](https://docs.espocrm.com/administration/layout-manager/) or the [best practises around layouts in the EspoCRM Knowledge Base](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Best-practices#layout)
 
 ### Translations in Twilio Flex
-> _The below Translation information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
+:black_square_button:> _The below Translation information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
 > 
 Translations of everything in Twilio Flex (so not the EspoCRM frame) can currently only be [configured](https://github.com/rodekruis/RED-X-DEH/blob/main/docs/deployment/translation-twilio-flex.md) by 510. The text of the translations can be of Twilio Flex can be found in the following [JSON](https://github.com/rodekruis/RED-X-DEH/tree/main/terraform/twilio/language-files). 
 
