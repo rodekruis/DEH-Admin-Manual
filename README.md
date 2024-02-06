@@ -389,12 +389,13 @@ These flowcharts represent all the tiny steps of DEH that take place from start:
 >3. Uninstall the EspoCRM Flex DEH Extension (Adminstration>Extensions). This will remove all DEH relevant extensions and DEH related data will not be visible anymore in EspoCRM.
 >4. Uninstall the Advanced Pack Extension (Administration>Extensions). Only relevant if this Advanced Package is installed. Uninstalling it will remove all the reports (dashboards) and flowcharts/workflows.
 >5. Upgrade EspoCRM (Administration>Upgrade). DEH is currently made for EspoCRM version 8.1.0. A newer version will not ensure compatibility with DEH.
->6. Remove the API role or API user called automatic-system-deh (Administration>Roles and Administration>API Users). This will break the connection between Twilio Flex and EspoCRM and no data will be transferred anymore.
->7. Certain role settings for users (Administration>Roles). The role permissions 'Export Permission' and 'Mass Update Permission' are very powerfull permissions which should be considered carefully before assigning to a role. >This would allow a user to quickly export large volumes of personal data or change large volumes of records in EspoCRM.
->8. Disabling or removing an entity (Administration>Entity Manager>[Entity]>Edit).
->9. Removing relationships between entities (Administration>Entity Manager>[Entity]>Relationships).
->10. Removing Email configuration settings (Administration>Outbound Emails). Removing this will stop the email notifications to users and password reset emails.
->11. Removing all other users (and admins) so that no one has access anymore.
+>6. Certain role settings for users (Administration>Roles). The role permissions 'Export Permission' and 'Mass Update Permission' are very powerfull permissions which should be considered carefully before assigning to a role. This would allow a user to quickly export large volumes of personal data or change large volumes of records in EspoCRM.
+>7. Disabling or removing an entity (Administration>Entity Manager>[Entity]>Edit).
+>8. Removing relationships between entities (Administration>Entity Manager>[Entity]>Relationships).
+>9. Removing Email configuration settings (Administration>Outbound Emails). Removing this will stop the email notifications to users and password reset emails.
+>10. Removing all other users (and admins) so that no one has access anymore.
+>> _The below chatbot information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
+>11. Remove the API role or API user called automatic-system-deh (Administration>Roles and Administration>API Users). This will break the connection between Twilio Flex and EspoCRM and no data will be transferred anymore.
 >
 >> _The below is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
 >
