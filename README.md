@@ -231,7 +231,7 @@ Reports are only available when the [Advanced Pack](https://www.espocrm.com/exte
 Install notifications and [stream](https://docs.espocrm.com/user-guide/stream/#notifications)
 
 ### Changing WhatsApp profile information in Console
-> _The below WhatsApp profile information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
+> _The below info on WhatsApp profiles is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
 > 
 This is the information showcased on the WhatsApp number's profile. It includes a profile picture and a concise business description. Additionally, it can be expanded to include hyperlinks to the website, email, and address. 
 
@@ -253,7 +253,7 @@ Note: in the future this will be done differently.
 
 
 ### Add/remove WhatsApp templates 
-> _The below WhatsApp template information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
+> _The below info on WhatsApp templates is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
 > 
 Whatsapp templates serve two primary purposes: for agents sending messages in conversations that have been inactive for 24 hours (WhatsApp/Meta policy does not allow an agent to send self-written messages after this period), or when a standardized message is to be send out.  
 
@@ -314,7 +314,7 @@ This is a list of currently known issues and how to mitigate those:
 [see redline admin manual]
 
 ### Monitoring logs, insights and costs 
-> _The below troubleshooting information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
+> _The below monitoring logs, insights and costs are useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
 > 
 Steps to find **error logs** in Twilio Flex: 
 1. Go to the Twilio Console and make sure you are in the right account
