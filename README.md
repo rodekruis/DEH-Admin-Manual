@@ -140,6 +140,7 @@ The [EspoCRM Knowledge base translations section](https://github.com/rodekruis/E
 ### User management 
 The generic information on user management is very well described in the [EspoCRM Docs](https://docs.espocrm.com/administration/users-management/). 
 
+>[!NOTE]
 > _The below User management information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
 
 DEH specific users are 'admin' and 'regular' (for supervisors and agents). DEH specific API users are 'automatic-system-deh' (Twilio API integration) and can be extended with an Kobo API integration.
@@ -147,8 +148,9 @@ DEH specific users are 'admin' and 'regular' (for supervisors and agents). DEH s
 ### Roles
 Everything about generic roles is described in the [EspoCRM Docs](https://docs.espocrm.com/administration/roles-management/). 
 
+>[!NOTE]
 > _The below User management inofrmation is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
-> 
+
 DEH specific roles can be found [here](https://github.com/rodekruis/RED-X-DEH/blob/main/docs/deployment/default-espocrm-roles-teams.md) 
 
 ### Teams
@@ -156,13 +158,14 @@ Teams are a way to group users together. Everything generic about teams in EspoC
 
 Teams are also required if the 'Sensitive case' functionality is added to DEH. Ask 510 to assist since this is an add on to the standard solution.
 
+>[!NOTE]
 > _The below Teams information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
-> 
+ 
 Teams in Twilio Flex are grouped using Skills and these are used for routing certain messages/calls to a certain team first before routing to everyone (for example). To add team in Twilio Flex, ask 510 to assist since this requires some [configuration steps](https://github.com/rodekruis/RED-X-DEH/blob/main/docs/operation/worker-skills-structure.md#project). To add a user to a team in Twilio Flex, you need the admin or supervisor role in Twilio Flex and then you can add/remove a skill for a user in Flex.
 
 ### Edit opening/closing times/days in chatbot
+>[!NOTE]
 > _The below chatbot information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
-> 
 The opening hours/days determine if conversations/calls can end up with agents in Twilio Flex. If a message/call is received outside of opening times, it will not be shown to in Twilio Flex but it will be logged in EspoCRM as new conversation.
 
 Steps: 
@@ -178,8 +181,9 @@ Steps:
 10. ‘Publish’ the flow on the top right of the screen
 
 ### Edit introduction message in chatbot
+>[!NOTE]
 > _The below chatbot information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
-> 
+
 The introduction message serves as the initial communication the receiver will receive upon engaging with the chatbot. 
 
 Steps: 
@@ -195,8 +199,9 @@ Steps:
 Note: this is not an instruction to edit the introduction message for calls. That process has not been documented yet.
 
 ### Adding/removing geographic permissions for messages/calls from foreign phone numbers
+>[!NOTE]
 > _The below phone number information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
-> 
+
 When using SMS and Call functionalities, Twilio only allows incoming numbers with a similar country code.  If you require the capability to make and receive calls or SMS to and from other countries, you can enable access via a setting called geo-permissions in the Twilio Console. 
 
 Please keep in mind that: 
@@ -220,8 +225,8 @@ Steps for geo-permissions regarding **calls**:
 6. Save geo permissions 
 
 ### TaskRouter (for future)
-> _The taskrouter information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
-> 
+>[!NOTE]
+> _The taskrouter information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._ 
 
 ### Send Kobo form submissions to EspoCRM 
 There is a product from 510 which allows you to create your own Kobo to EspoCRM connection. Following the steps in [this repository](https://github.com/rodekruis/kobo-connect), you can send Kobo form submissions to an entity of choice in EspoCRM.
@@ -232,8 +237,9 @@ Reports are only available when the [Advanced Pack](https://www.espocrm.com/exte
 Install notifications and [stream](https://docs.espocrm.com/user-guide/stream/#notifications)
 
 ### Changing WhatsApp profile information in Console
+>[!NOTE]
 > _The below info on WhatsApp profiles is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
-> 
+ 
 This is the information showcased on the WhatsApp number's profile. It includes a profile picture and a concise business description. Additionally, it can be expanded to include hyperlinks to the website, email, and address. 
 
 Steps: 
@@ -254,8 +260,9 @@ Note: in the future this will be done differently.
 
 
 ### Add/remove WhatsApp templates 
+>[!NOTE]
 > _The below info on WhatsApp templates is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
-> 
+ 
 Whatsapp templates serve two primary purposes: for agents sending messages in conversations that have been inactive for 24 hours (WhatsApp/Meta policy does not allow an agent to send self-written messages after this period), or when a standardized message is to be send out.  
 
 Steps: 
@@ -395,7 +402,8 @@ These flowcharts represent all the tiny steps of DEH that take place from start:
 >8. Removing relationships between entities (Administration>Entity Manager>[Entity]>Relationships).
 >9. Removing Email configuration settings (Administration>Outbound Emails). Removing this will stop the email notifications to users and password reset emails.
 >10. Removing all other users (and admins) so that no one has access anymore.
->> _From this point onwards, the forbidden areas are useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
+> >[!NOTE]
+> > _From this point onwards, the forbidden areas are useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
 >11. Remove the API role or API user called automatic-system-deh (Administration>Roles and Administration>API Users). This will break the connection between Twilio Flex and EspoCRM and no data will be transferred anymore.
 >
 >This is a list of potential destructive actions in Twilio to be aware of:
