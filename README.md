@@ -371,6 +371,7 @@ This is a list of potential destructive actions in EspoCRM to be aware of:
 
 > [!TIP]
 > The below is useful for Twilio Flex. If you only use EspoCRM, this is not relevant.
+
 This is a list of potential destructive actions in Twilio to be aware of:
 1. Remove Active Phone Numbers
 2. Remove SSO setting for Twilio Flex (Flex>Manage>Single sign-on). This will disable every user from logging in to Twilio Flex.
