@@ -194,7 +194,7 @@ Steps:
 Note: this is not an instruction to edit the introduction message for calls. That process has not been documented yet.
 
 ### Adding/removing geographic permissions for messages/calls from foreign phone numbers
-> _The below chatbot information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
+> _The below phone number information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
 > 
 When using SMS and Call functionalities, Twilio only allows incoming numbers with a similar country code.  If you require the capability to make and receive calls or SMS to and from other countries, you can enable access via a setting called geo-permissions in the Twilio Console. 
 
@@ -219,6 +219,8 @@ Steps for geo-permissions regarding **calls**:
 6. Save geo permissions 
 
 ### TaskRouter (for future)
+> _The taskrouter information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
+> 
 
 ### Send Kobo form submissions to EspoCRM 
 There is a product from 510 which allows you to create your own Kobo to EspoCRM connection. Following the steps in [this repository](https://github.com/rodekruis/kobo-connect), you can send Kobo form submissions to an entity of choice in EspoCRM.
@@ -229,6 +231,8 @@ Reports are only available when the [Advanced Pack](https://www.espocrm.com/exte
 Install notifications and [stream](https://docs.espocrm.com/user-guide/stream/#notifications)
 
 ### Changing WhatsApp profile information in Console
+> _The below WhatsApp profile information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
+> 
 This is the information showcased on the WhatsApp number's profile. It includes a profile picture and a concise business description. Additionally, it can be expanded to include hyperlinks to the website, email, and address. 
 
 Steps: 
@@ -249,6 +253,8 @@ Note: in the future this will be done differently.
 
 
 ### Add/remove WhatsApp templates 
+> _The below WhatsApp template information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
+> 
 Whatsapp templates serve two primary purposes: for agents sending messages in conversations that have been inactive for 24 hours (WhatsApp/Meta policy does not allow an agent to send self-written messages after this period), or when a standardized message is to be send out.  
 
 Steps: 
@@ -308,7 +314,8 @@ This is a list of currently known issues and how to mitigate those:
 [see redline admin manual]
 
 ### Monitoring logs, insights and costs 
-
+> _The below troubleshooting information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
+> 
 Steps to find **error logs** in Twilio Flex: 
 1. Go to the Twilio Console and make sure you are in the right account
 2. Monitor on the top left bar (Ctrl + F is your friend)
@@ -359,6 +366,8 @@ Steps to find overview of **costs**:
    - [DPIA](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Best-practices#data-responsibility) (Emie)
 
 ### Lifecycle Diagrams: DEH explained in a flowchart
+> _The below lifecycle diagrams are useful for Twilio Flex. If you only use EspoCRM, this is not relevant._
+> 
 These flowcharts represent all the tiny steps of DEH that take place from start: the moment a call or message was send in, to end. An admin can use the flowcharts to further understand DEH. The steps are different for incoming messasges (conversation), calls and outbound messages (outbound conversation). We refer to the images below.
 
 #### Conversation Lifecycle
