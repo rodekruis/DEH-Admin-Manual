@@ -1,14 +1,16 @@
 # DEH-Admin-Manual
-DEH Admin Manual (temporary docs)
+>[!IMPORTANT]
+>These docs are under construction and approximately 80% of what they will be.
 
 Contents
-1. [Base knowledge](https://github.com/rodekruis/DEH-Admin-Manual/blob/main/README.md#base-knowledge)
+1. [Introduction](https://github.com/rodekruis/DEH-Admin-Manual/blob/main/README.md#introduction)
+2. [Base knowledge](https://github.com/rodekruis/DEH-Admin-Manual/blob/main/README.md#base-knowledge)
    - Terminology
    - DEH in detail
    - EspoCRM DEH Data model
    - Lifecycle Diagrams
    - Work environments
-3. DEH Configuration by admin
+3. [DEH Configuration by admin](https://github.com/rodekruis/DEH-Admin-Manual/blob/main/README.md#deh-configuration-by-admin)
    - Best practises
    - Add/edit/remove fields 
    - Add/edit/remove layouts
@@ -25,17 +27,18 @@ Contents
    - Reports/dashboards
    - Configure notifications and stream
    - Changing WhatsApp profile information in Console
-4. Operational admin jobs
+4. [Operational admin jobs](https://github.com/rodekruis/DEH-Admin-Manual/blob/main/README.md#operational-admin-jobs)
    - Add/configure/remove users in Flex 
    - Add/configure/remove users in EspoCRM 
    - Add/remove WhatsApp templates
-7. Troubleshooting guidelines
+7. [Troubleshooting guidelines](https://github.com/rodekruis/DEH-Admin-Manual/blob/main/README.md#troubleshooting-guidelines)
    - Steps to save browser logs
    - Steps to get to technical error screenshot
    - Known issues
    - Monitoring logs, insights and costs 
-8. Other important aspects
+8. [Other important aspects](https://github.com/rodekruis/DEH-Admin-Manual/blob/main/README.md#other-important-aspects)
    - [DPIA](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Best-practices#data-responsibility) (Emie)
+   - Lifecycle Diagrams
    - Forbidden areas
 
 ## Introduction
