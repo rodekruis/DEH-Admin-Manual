@@ -37,7 +37,7 @@ Contents
    - Known issues
    - Monitoring logs, insights and costs 
 8. [Other important aspects](https://github.com/rodekruis/DEH-Admin-Manual/blob/main/README.md#other-important-aspects)
-   - [DPIA](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Best-practices#data-responsibility) (Emie)
+   - Data Responsibility and Data Protection Impact Assessment (Emie)
    - Lifecycle Diagrams
    - Forbidden areas
 
@@ -373,8 +373,8 @@ Steps to find overview of **costs**:
 
 ## Other important aspects
 
-### DPIA
-   - [DPIA](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Best-practices#data-responsibility) (Emie)
+### Data responsibility and DPIA
+   - [DPIA](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Best-practices#data-responsibility-and-data-protection-impact-assessment) (Emie)
 
 ### Lifecycle Diagrams: DEH explained in a flowchart
 >[NOTE!]
