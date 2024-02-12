@@ -257,9 +257,72 @@ Steps:
 
 ### Add/configure/remove users in Flex 
 
+Steps for adding and configuring a user in Twilio Flex, using Azure Active Directory and/or Microsoft Entra Admin Center
+1. Make sure the user is already in [Azure Active Directory](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers) or [Microsoft Entra Admin Center](https://entra.microsoft.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers/menuId/), if not add this user first
+2. for assigning roles (agent/supervisor/admin) to already added user:
+3. Make sure you are on page ‘Azure Active Directory’
+4. Enterprise applications (in the left bar)
+5. All applications (in the left bar)
+6. Twilio Flex (or 'DEH <country name> Twilio Flex' or similar)
+7. Users and groups (in the left bar)
+8. ‘+ Add user/group’ on the top bar
+9. Select user(s)
+10. Select role
+11. Assign
+
+When the new user has **first logged in** to Twilio Flex, there is one step for adding 'Twilio Flex Skills' that needs to happen in Twilio Flex to fully onboard the user. A supervisor and/or admin can do this:
+1. Go to Twilio Flex (as admin or supervisor)
+2. Go to ‘Your Teams’ (left bar)
+3. Select user of interest
+4. Add skill(s) comm*messenger if the agent should receive incoming Facebook Messenger, comm*sms if the agent should receive SMS, comm*voice for calls and comm*whatsapp for WhatsApp. Click the blue button ('+') to make sure to add the skill.
+5. Add skill(s) related to language (for example language*nl-nl, if user is able to receive conversations in Dutch, other examples include ‘language*en-us’ for English and more depending on the specific configuration)
+6. Add skill project*everyone
+8. Don’t forget to save with the blue button in the bottom right 
+
 Note: in the future this will be done differently.
+Note: by default the user will have a limit of 1 open conversation/call in Twilio Flex. Admins can increase this in the Twilio Console.
 
 ### Add/configure/remove users in EspoCRM 
+
+Steps to add and configure a user in EspoCRM for when **SSO** is configured: 
+1. Make sure the user is already in [Azure Active Directory](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers) or [Microsoft Entra Admin Center](https://entra.microsoft.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers/menuId/), if not add this user first
+2. Go to EspoCRM and log in (you should have the admin role)
+3. Administration -> Users -> '+ Create User'
+4. 'User Name': add the email address of the user
+5. Add First Name and Last Name
+6. 'Email': add the email address of the user
+8. Type: Regular (this is the default)
+9. Teams: add relevant Teams (for example, Agent Team and/or Cash Team)
+10. Roles: don't assign any roles here since the roles are already inherited from the earlier selected Teams
+11. 'Is Active': make sure this is checked
+13. Leave the following fields empty: 'Default Team', 'Working Time Calendar, 'Layout Set', Password
+14. You can add other information as well (e.g. Title, phone nr, gender, avatar), but these are not mandatory
+15. Click the 'Save' button.
+
+Steps to add and configure a user in EspoCRM for when SSO is **not** configured:
+1. Go to EspoCRM and log in (you should have the admin role)
+3. Administration -> Users -> '+ Create User'
+4. 'User Name': add the email address of the user
+5. Add First Name and Last Name
+6. 'Email': add the email address of the user
+8. Type: Regular (this is the default)
+9. Teams: add relevant Teams (for example, Agent Team and/or Cash Team)
+10. Roles: don't assign any roles here since the roles are already inherited from the earlier selected Teams
+11. 'Is Active': make sure this is checked
+13. Leave the following fields empty: 'Default Team', 'Working Time Calendar, 'Layout Set', Password
+14. You can add other information as well (e.g. Title, phone nr, gender, avatar), but these are not mandatory
+15. Click the 'Save' button. This will send an email to the user with a generated password for the first login.
+
+### Add/configure/remove users in Twilio Console
+Twilio Console is only meant for admins and the occasional supervisor. Please don't give access to people who don't need this.
+
+Steps for adding Twilio Console users (other admins and/or possible supervisors, not agents) to Twilio Console: 
+1. Go to Twilio Console
+2. Account (top right)
+3. Manage users (and probably complete 2FA popup)
+4. Invite user
+5. Add email address and select role (Administrator for Admins, Developer for supervisors, Billing Manager for Budget Holders)
+6. Send invitation (please note that invitation expires after a period) 
 
 
 ### Add/remove WhatsApp templates 
