@@ -232,7 +232,7 @@ Steps for geo-permissions regarding **calls**:
 > The taskrouter information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant.
 
 ### Send Kobo form submissions to EspoCRM 
-There is a publicly available and free product from 510 that allows you to create your own Kobo to EspoCRM connection. Following the steps in [the knowledge base](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Third-party-integration#integrate-espocrm-with-kobo), you can send Kobo form submissions to an entity and field of choice in EspoCRM.
+There is a publicly available and free product from 510 that allows you to create your own Kobo to EspoCRM connection. Following the steps in [the knowledge base](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Third-party-integration#integrate-espocrm-with-kobo), you can send Kobo form submissions to an entity and field of choice in EspoCRM. It is recommended to use [KoboConnect ](https://github.com/rodekruis/kobo-connect#espocrm)for this. 
 
 ### Reports 
 Reports are only available when the [Advanced Pack](https://www.espocrm.com/extensions/advanced-pack/) has been purchased. This allows you to create dashboards and reports in EspoCRM. A generic explanation can be found in the [EspoCRM docs](https://docs.espocrm.com/user-guide/reports/) There are also ready-made DEH specific reports which can be found [here](https://github.com/rodekruis/RED-X-DEH/blob/main/docs/deployment/deh-and-advanced-package.md) (Emie)
