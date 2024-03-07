@@ -470,6 +470,7 @@ These flowcharts represent all the tiny steps of DEH that take place from start:
 >9. Removing Email configuration settings (Administration>Outbound Emails). Removing this will stop the email notifications to users and password reset emails.
 >10. Removing all other users (and admins) so that no one has access anymore.
 >12. Remove the API role or API user called automatic-system-deh (Administration>Roles and Administration>API Users). This will break the connection between Twilio Flex and EspoCRM and no data will be transferred anymore.
+>13. It is not allowed to make fields required in the DehContact, DehInteraction, DehMessage and DehCall entity. Why? Because records in these entities will be created automatically via the system and it does values of required fields and the record creation/popup will therefore fail. You can make fields required within the entity DehCase. 
 
 
 >[!NOTE]
