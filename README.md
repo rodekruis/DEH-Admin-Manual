@@ -27,6 +27,7 @@ Contents
    - Reports/dashboards
    - Configure notifications and stream
    - Changing WhatsApp profile information in Console
+   - Enable email notifications
 4. [Operational admin jobs](https://github.com/rodekruis/DEH-Admin-Manual/blob/main/README.md#operational-admin-jobs)
    - Add/configure/remove users in Flex 
    - Add/configure/remove users in EspoCRM 
