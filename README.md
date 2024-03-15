@@ -286,19 +286,16 @@ Note: by default the user will have a limit of 1 open conversation/call in Twili
 ### Add/configure/remove users in EspoCRM 
 
 Steps to add and configure a user in EspoCRM for when **SSO** is configured: 
-1. Make sure the user is already in [Azure Active Directory](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers) or [Microsoft Entra Admin Center](https://entra.microsoft.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers/menuId/), if not add this user first
-2. Go to EspoCRM and log in (you should have the admin role)
-3. Administration -> Users -> '+ Create User'
-4. 'User Name': add the email address of the user
-5. Add First Name and Last Name
-6. 'Email': add the email address of the user
-8. Type: Regular (this is the default)
-9. Teams: add relevant Teams (for example, Agent Team and/or Cash Team)
-10. Roles: don't assign any roles here since the roles are already inherited from the earlier selected Teams
-11. 'Is Active': make sure this is checked
-13. Leave the following fields empty: 'Default Team', 'Working Time Calendar, 'Layout Set', Password
-14. You can add other information as well (e.g. Title, phone nr, gender, avatar), but these are not mandatory
-15. Click the 'Save' button.
+1. Make sure the user is already in [Azure Active Directory](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers) or [Microsoft Entra Admin Center](https://entra.microsoft.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers/menuId/), if not add/invite this user first
+2. Go to Enterprise Applications in Azure
+3. Search for DEH EspoCRM and click to enter
+4. Go to 'Users and groups'
+5. '+ Add user/group'
+6. Select the user that should have access to EspoCRM
+7. Select the base role of that user in EspoCRM (Agent or Supervisor)
+8. When this new users logs in to the EspoCRM part of DEH for the first time, a user will be automatically created in EspoCRM with Agent or Supervisor teams permissions. If you want to give other permissions to this user (e.g. add the Team 'First Aid' to this user), you should go EspoCRM -> Administration -> Users -> Teams: add relevant Teams
+9. You can add other information as well (e.g. Name, Title, phone nr, gender, avatar), but these are usually not mandatory
+10. Click the 'Save' button.
 
 Steps to add and configure a user in EspoCRM for when SSO is **not** configured:
 1. Go to EspoCRM and log in (you should have the admin role)
