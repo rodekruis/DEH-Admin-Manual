@@ -285,7 +285,7 @@ Note: by default the user will have a limit of 1 open conversation/call in Twili
 
 ### Add/configure/remove users in EspoCRM 
 
-Steps to add and configure a user in EspoCRM for when **SSO** is configured: 
+#### Steps to add and configure a user in EspoCRM for when **SSO** is configured: 
 1. Make sure the user is already in [Azure Active Directory](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers) or [Microsoft Entra Admin Center](https://entra.microsoft.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers/menuId/), if not add/invite this user first
 2. Go to Enterprise Applications in Azure
 3. Search for DEH EspoCRM and click to enter
@@ -297,7 +297,7 @@ Steps to add and configure a user in EspoCRM for when **SSO** is configured:
 9. You can add other information as well (e.g. Name, Title, phone nr, gender, avatar), but these are usually not mandatory
 10. Click the 'Save' button.
 
-Steps to add and configure a user in EspoCRM for when SSO is **not** configured:
+#### Steps to add and configure a user in EspoCRM for when SSO is **not** configured:
 1. Go to EspoCRM and log in (you should have the admin role)
 3. Administration -> Users -> '+ Create User'
 4. 'User Name': add the email address of the user
@@ -312,7 +312,7 @@ Steps to add and configure a user in EspoCRM for when SSO is **not** configured:
 15. Click the 'Save' button. This will send an email to the user with a generated password for the first login.
 
 ### Add/configure/remove users in Twilio Console
-Twilio Console is only meant for admins and the occasional supervisor. Please don't give access to people who don't need this.
+Twilio Console is only meant for admins and the occasional supervisor. Please don't give access to people who don't need this. This is not the same as Twilio Flex.
 
 Steps for adding Twilio Console users (other admins and/or possible supervisors, not agents) to Twilio Console: 
 1. Go to Twilio Console
