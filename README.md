@@ -285,7 +285,7 @@ Note: by default the user will have a limit of 1 open conversation/call in Twili
 
 ### Add/configure/remove users in EspoCRM 
 
-#### Steps to add and configure a user in EspoCRM for when **SSO** is configured: 
+#### Steps to add and configure a user in EspoCRM for when **SSO** is configured: (recommended approach)
 1. Make sure the user is already in [Azure Active Directory](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers) or [Microsoft Entra Admin Center](https://entra.microsoft.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers/menuId/), if not add/invite this user first
 2. Go to Enterprise Applications in Azure
 3. Search for DEH EspoCRM and click to enter
@@ -297,7 +297,7 @@ Note: by default the user will have a limit of 1 open conversation/call in Twili
 9. You can add other information as well (e.g. Name, Title, phone nr, gender, avatar), but these are usually not mandatory
 10. Click the 'Save' button.
 
-#### Steps to add and configure a user in EspoCRM for when SSO is **not** configured:
+#### Steps to add and configure a user in EspoCRM for when SSO is **not** configured: (not recommended approach)
 1. Go to EspoCRM and log in (you should have the admin role)
 3. Administration -> Users -> '+ Create User'
 4. 'User Name': add the email address of the user
