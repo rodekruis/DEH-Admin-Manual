@@ -263,7 +263,7 @@ There are **two** places where agents and supervisors need to be added: to **Twi
 Steps for adding and configuring a user in Twilio Flex, using Azure Active Directory and/or Microsoft Entra Admin Center
 1. Make sure the user is already in [Azure Active Directory](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers) or [Microsoft Entra Admin Center](https://entra.microsoft.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers/menuId/), if not add this user first
 2. for assigning roles (agent/supervisor/admin) to already added user:
-3. Make sure you are on page ‘Azure Active Directory’
+3. Make sure you are on page ‘Azure Active Directory’ or 'Azure Entra ID'
 4. Enterprise applications (in the left bar)
 5. All applications (in the left bar)
 6. Twilio Flex (or 'DEH <country name> Twilio Flex' or similar)
