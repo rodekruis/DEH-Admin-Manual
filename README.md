@@ -283,7 +283,16 @@ When the new user has **first logged in** to Twilio Flex, there is one step for 
 8. Don’t forget to save with the blue button in the bottom right 
 
 Note: in the future this will be done differently.
-Note: by default the user will have a limit of 1 open conversation/call in Twilio Flex. Admins can increase this in the Twilio Console in TaskRouter.
+
+Note: by default the user will have a limit of 1 open conversation/call in Twilio Flex. Admins can increase this in the Twilio Console in TaskRouter by the following steps:
+1. Go to Twilio Console
+2. Go to “TaskRouter - Overview
+3. Go to “Workspaces” to “Flex Task Assignment”
+4. Go to “Workers” (left menu)
+5. Select worker of interest
+6. Under the section ‘Task Channels’
+   1. Adjust ‘chat’ capacity for the maximum number of WhatsApp conversations in personal queue
+   2. Adjust 'voice’ capacity for the maximum number of calls in personal queue 
 
 #### 2. EspoCRM
 Steps to add and configure a user in EspoCRM for when **SSO is** configured: (recommended approach)
