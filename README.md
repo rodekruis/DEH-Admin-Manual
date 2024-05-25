@@ -338,7 +338,18 @@ Steps to add and configure an admin and user in EspoCRM for when SSO is **not** 
 14. You can add other information as well (e.g. Title, phone nr, gender, avatar), but these are not mandatory
 15. Click the 'Save' button. This will send an email to the user with a generated password for the first login.
 
-
+Steps to add and configure an admin and user in EspoCRM for when SSO **is** configured: (recommended approach but has a workaround in steps 9 and 10)
+1. Make sure the user is already in [Azure Active Directory](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers) or [Microsoft Entra Admin Center](https://entra.microsoft.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers/menuId/), if not add/invite this user first
+2. Go to Enterprise Applications in Azure
+3. Search for DEH EspoCRM and click to enter
+4. Go to 'Users and groups'
+5. '+ Add user/group'
+6. Select the user that should have access to EspoCRM
+7. Select the Admin role of that user in EspoCRM 
+8. When this new users logs in to the EspoCRM part of DEH for the first time, a user will be automatically created, but without Admin permissions
+9. Log in as with another account as Admin in EspoCRM
+10. Change the type of earlier added user from Regular to Admin
+11. From now on, the user can log in as Admin with SSO
 
 ### Add/remove WhatsApp templates 
 >[!NOTE]
