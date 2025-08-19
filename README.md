@@ -1,6 +1,4 @@
 # DEH-Admin-Manual
->[!IMPORTANT]
->These docs are under construction and approximately 80% of what they will be.
 
 Contents
 1. [Introduction](https://github.com/rodekruis/DEH-Admin-Manual/blob/main/README.md#introduction)
@@ -22,7 +20,7 @@ Contents
    - Edit opening/closing times in chatbot
    - Edit introduction message in chatbot
    - Adding/removing geographic permissions for messages/calls from foreign phone numbers
-   - TaskRouter (for future)
+   - TaskRouter
    - Kobo form submissions to EspoCRM connection
    - Reports/dashboards
    - Configure notifications and stream
@@ -228,7 +226,7 @@ Steps for geo-permissions regarding **calls**:
 5. Filter by country (or Ctrl+F) to find the country of interest
 6. Save geo permissions 
 
-### TaskRouter (for future)
+### TaskRouter
 >[!NOTE]
 > The taskrouter information is useful for Twilio Flex. If you only use EspoCRM, this is not relevant.
 
@@ -282,7 +280,6 @@ When the new user has **first logged in** to Twilio Flex, there is one step for 
 6. Add skill project*everyone
 8. Don’t forget to save with the blue button in the bottom right 
 
-Note: in the future this will be done differently.
 
 Note: by default the user will have a limit of 1 open conversation/call in Twilio Flex. Admins can increase this in the Twilio Console in TaskRouter by the following steps:
 1. Go to Twilio Console
