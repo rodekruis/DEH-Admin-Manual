@@ -171,16 +171,10 @@ Teams in Twilio Flex are grouped using Skills and these are used for routing cer
 The opening hours/days determine if conversations/calls can end up with agents in Twilio Flex. If a message/call is received outside of opening times, it will not be shown to in Twilio Flex but it will be logged in EspoCRM as new conversation.
 
 Steps: 
-1. Go to Twilio Console
-2. Studio
-3. Flow
-4. Select flow named '(Default) Opening Hours Subflow'
-5. Click widget named ‘set_top_variables’
-6. Edit ‘openTime’ or 'closeTime' in hh:mm format
-7. Edit 'openDay' or 'closeDay'. 1 means Monday, 2 Tuesday, etc..
-8. Edit 'timeZone' in Continent/City format
-9. Save
-10. ‘Publish’ the flow on the top right of the screen
+1. Go to EspoCRM
+2. Go to Modules entity
+3. Go to Base Module
+4. Change opening times/days and save
 
 ### Edit introduction message in chatbot
 >[!NOTE]
@@ -299,10 +293,8 @@ Steps to add and configure a user in EspoCRM for when **SSO is** configured: (re
 4. Go to 'Users and groups'
 5. '+ Add user/group'
 6. Select the user that should have access to EspoCRM
-7. Select the base role of that user in EspoCRM (Agent or Supervisor)
-8. When this new users logs in to the EspoCRM part of DEH for the first time, a user will be automatically created in EspoCRM with Agent or Supervisor teams permissions. If you want to give other permissions to this user (e.g. add the Team 'First Aid' to this user), you should go EspoCRM -> Administration -> Users -> Teams: add relevant Teams
->[!NOTE]
->The 'role' field in the user of EspoCRM should not be configured. The user inherits roles from the Teams where the user is assigned to. So you only have to assign Teams to a user and not roles. The Teams will have the correct roles attached.
+7. Select the default role of that user in EspoCRM
+8. Go to EspoCRM and add this user manually but **don't **send a password via email. Password will be done via SSO instead. Add a specific role to this user.
 10. You can add other information as well (e.g. Name, Title, phone nr, gender, avatar), but these are usually not mandatory
 11. Click the 'Save' button.
 
@@ -355,19 +347,11 @@ Steps to add and configure an admin and user in EspoCRM for when SSO **is** conf
 Whatsapp templates serve two primary purposes: for agents sending messages in conversations that have been inactive for 24 hours (WhatsApp/Meta policy does not allow an agent to send self-written messages after this period), or when a standardized message is to be send out.  
 
 Steps: 
-1. Go to Twilio Console (make sure you are in the correct account)
-2. Messaging
-3. Content Editor
-4. Create new
-5. Template Name should be something logic including language (for example: start_conversation_dutch)
-6. Select Template Language
-7. Select Content Type should be ‘Text’
-8. Click Create
-9. In Body, type your template (please keep in mind [WhatsApp template rules](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/))
-10. Click ‘Save and submit for WhatsApp approval’
-11. Wait until approved (usually under a minute and you will probably get a confirmation email)
-12. Add WhatsApp template as Canned Response in EspoCRM so that every user can find and use this
-13. Refresh Twilio Flex and then the templates are visible in the Canned Responses
+1. Go to EspoCRM
+2. Go to Template Messages
+3. Add a new Template Message and select WhatsApp template checkbox
+4. Save and wait a few minutes for it being approved by Meta.
+5. Click the Sync button and refresh the screen to see if the status has change to approved
 
 ## Troubleshooting guidelines
 The following websites are great resources to troubleshoot different areas: 
